@@ -14,8 +14,9 @@
     <![endif]-->
 </head>
 <style>
+
      ul{list-style: none;color:red;font-size:20px;}
-     li{color:black;font-size:12px;}
+     li{color:black;font-size:12px;;}
      #body-container{width:970px; height:600px; }
      #left{width:30%;height:100%;}
      #center{width:45%;height:100%;margin-left:30%;margin-top:-600px ;}
@@ -26,8 +27,11 @@
     #right #mini-menu{height: 10%;}
     #right #up-feeling {height: 55%;}
 </style>
-<body>
+<body >
 
+    <!--<div id="ins">-->
+
+    <!--</div>-->
      <div class="container" id="body-container">
           <div id="left">
               <!--轮播图-->
@@ -121,42 +125,139 @@
              </div>
              <!--热点体会-->
              <div id="up-feeling">
-                 <ul class="list-unstyled" style="color: red">热点体会
-                     <li class="divider"></li>
-                     <li>
-                         <a>
-                         <div class="row">
-                             <div class="col-xs-4"><img class="user-img" src="icon/mini-user.png" style="margin-top:5px; background-color: grey" ></div>
-                             <div class="col-xs-8" style="padding:0;"><h6>标题</h6><small class="user-name"><label for="up-user-name">发布人</label><span id="up-user-name">用户名</span></small>
-                              </div>
-                         </div>
-                        </a>
-                     </li>
+                 <!--<ul class="list-unstyled" style="color: red">热点体会-->
+                     <!--<li class="divider"></li>-->
+                     <!--<li>-->
+                         <!--<a>-->
+                         <!--<div class="row">-->
+                             <!--<div class="col-xs-4"><img class="user-img" src="icon/mini-user.png" style="margin-top:5px; background-color: grey" ></div>-->
+                             <!--<div class="col-xs-8" style="padding:0;"><h6>标题</h6><small class="user-name"><label for="up-user-name">发布人</label><span id="up-user-name">用户名</span></small>-->
+                              <!--</div>-->
+                         <!--</div>-->
+                        <!--</a>-->
+                     <!--</li>-->
 
 
 
 
-                 </ul>
+                 <!--</ul>-->
+
+                     <dl class="dl-horizontal " >
+                         <dt>
+                             <img src="icon/mini-user.png">
+
+                         </dt>
+                         <dd>用户一</dd>
+                         <dt>
+                             <img src="icon/mini-user.png">
+
+                         </dt>
+                         <dd>用户一</dd>
+                         <dt>
+                             <img src="icon/mini-user.png">
+
+                         </dt>
+                         <dd>用户一</dd>
+                         <dt>
+                             <img src="icon/mini-user.png">
+
+                         </dt>
+                         <dd>用户一</dd>
+                         <dt>
+                             <img src="icon/mini-user.png">
+
+                         </dt>
+                         <dd>用户一</dd>
+                         <dt>
+                             <img src="icon/mini-user.png">
+
+                         </dt>
+                         <dd>用户一</dd>
+                         <dt>
+                             <img src="icon/mini-user.png">
+
+                         </dt>
+                         <dd>用户一</dd>
+
+                     </dl>
+
              </div>
          </div>
      </div>
 
+
+
+    <!--学习排行榜-->
      <div class="container">
-         <header>
+
              <div class="row">
-                 <div class="col-lg-6"><h5>学习之星</h5><small >学习理论哪家强</small></div>
-                 <div class="col-lg-offset-6">
+                 <div class="col-lg-8"><h5>学习之星<small  >学习理论哪家强</small></h5></div>
+                 <div class="col-lg-4">
                      <button class="btn btn-primary">月度之星</button>
                      <button class="btn btn-primary">季度之星</button>
                      <button class="btn btn-default">年度之星</button>
                  </div>
              </div>
-         </header>
+            <div class="row">
+                  <div class="col-lg-1">
+                      <img src="icon/mini-user.png" >
+                      <p>缓缓</p>
+                  </div>
+            </div>
      </div>
-     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <div>
+        <h5>友情连接:</h5>
+
+
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
      <script src="jquery-3.0.0.min.js"></script>
      <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
      <!-- Include all compiled plugins (below), or include individual files as needed -->
      <script src="bootstrap-3.3.7/js/bootstrap.min.js"></script>
+     <!--<script>-->
+         <!--function clientSideInclude(id, url) {-->
+             <!--var req = false;-->
+<!--// Safari, Firefox, 及其他非微软浏览器-->
+             <!--if (window.XMLHttpRequest) {-->
+                 <!--try {-->
+                     <!--req = new XMLHttpRequest();-->
+                 <!--} catch (e) {-->
+                     <!--req = false;-->
+                 <!--}-->
+             <!--} else if (window.ActiveXObject) {-->
+<!--// For Internet Explorer on Windows-->
+                 <!--try {-->
+                     <!--req = new ActiveXObject("Msxml2.XMLHTTP");-->
+                 <!--} catch (e) {-->
+                     <!--try {-->
+                         <!--req = new ActiveXObject("Microsoft.XMLHTTP");-->
+                     <!--} catch (e) {-->
+                         <!--req = false;-->
+                     <!--}-->
+                 <!--}-->
+             <!--}-->
+             <!--var element = document.getElementById(id);-->
+             <!--if (!element) {-->
+                 <!--alert("函数clientSideInclude无法找到id " + id + "。" +-->
+                     <!--"你的网页中必须有一个含有这个id的div 或 span 标签。");-->
+                 <!--return;-->
+             <!--}-->
+             <!--if (req) {-->
+<!--// 同步请求，等待收到全部内容-->
+                 <!--req.open(’GET’, url, false);-->
+                 <!--req.send(null);-->
+                 <!--element.innerHTML = req.responseText;-->
+             <!--} else {-->
+                 <!--element.innerHTML =-->
+                     <!--"对不起，你的浏览器不支持" +-->
+                     <!--"XMLHTTPRequest 对象。这个网页的显示要求" +-->
+                     <!--"Internet Explorer 5 以上版本, " +-->
+                     <!--"或 Firefox 或 Safari 浏览器，也可能会有其他可兼容的浏览器存在。";-->
+             <!--}-->
+         <!--}-->
+     <!--</script>-->
 </body>
 </html>

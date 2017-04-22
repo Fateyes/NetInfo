@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head      >
+    <meta charset="UTF-8">
+    <title>下拉</title>
+    <script src="js/lib/angular.js"></script>
+</head>
+<style>
+    ul{list-style:none;}
+    #season-list>li{list-style-image: url("icon/triangle-right.png")}
+</style>
+<body>
+   <div id="drop-down" ng-controller="dropCtrl" ng-app="note">
+
+       <ul id="season-list">
+           <li    ><a  ng-click="addCount1()">第一季度</a>
+              <ul  ng-show="g1">
+                  <li><a>一月份</a></li>
+                  <li><a>一月份</a></li>
+                  <li><a>三月份</a></li>
+              </ul>
+           </li>
+           <li><a ng-click="addCount2()">第二季度</a>
+            <ul ng-show="g2">
+                   <li><a>四月份</a></li>
+                   <li><a>一月份</a></li>
+                   <li><a>三月份</a></li>
+               </ul>
+           </li>
+           <li><a ng-click="addCount3()">第三季度</a>
+               <ul  ng-show="g3">
+                   <li><a>七月份</a></li>
+                   <li><a>一月份</a></li>
+                   <li><a>三月份</a></li>
+               </ul>
+           </li>
+           <li><a ng-click="addCount4()">第一季度</a>
+               <ul  ng-show="g4">
+                   <li><a>一月份</a></li>
+                   <li><a>一月份</a></li>
+                   <li><a>三月份</a></li>
+               </ul>
+           </li>
+       </ul>
+        {{num}}
+   </div>
+<script>
+    angular.module('note',[])
+        .controller('dropCtrl',function ($scope) {
+            $scope.count1=0;
+            $scope.g1=0;
+            $scope.count2=0;
+            $scope.g2=0;
+            $scope.count3=0;
+            $scope.g3=0;
+            $scope.count4=0;
+            $scope.g4=0;
+            $scope.addCount1=function () {
+                $scope.count1=$scope.count1+1;
+                $scope.g1=$scope.count1%2;
+
+            };
+            $scope.addCount2=function () {
+                $scope.count2++;
+                $scope.g2=$scope.count2%2;
+            };
+            $scope.addCount3=function () {
+                $scope.count3++;
+                $scope.g3=$scope.count3%2;
+            };
+            $scope.addCount4=function () {
+                $scope.count4++;
+                $scope.g4=$scope.count4%2;
+            };
+        })
+</script>
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <script src="jquery-3.0.0.min.js"></script>
+   <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+   <!-- Include all compiled plugins (below), or include individual files as needed -->
+   <script src="bootstrap-3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
