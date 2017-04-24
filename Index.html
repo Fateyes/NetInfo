@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="note">
+<head>
+    <meta charset="UTF-8">
+    <title>在线教育系统</title>
+    <script src="js/lib/angular.js"></script>
+    <link href="css/mainPage_body.css">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link type="text/css" rel="stylesheet" href="bootstrap-3.3.7/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="dist/all.min.css">
+    <script type="text/javascript" src="jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" src="bootstrap-3.3.7/js/bootstrap.min.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="../common/utils/angular-summernote-master/dist/font/css/font-awesome.css" />
+    <link type="text/css" rel="stylesheet" href="../common/utils/angular-summernote-master/dist/summernote.css">
+    <script type="text/javascript" src="../common/utils/angular-summernote-master/dist/summernote.js"></script>
+    <script type="text/javascript" src="../common/utils/angular-summernote-master/dist/lang/summernote-zh-CN.js"></script>
+
+    <script type="text/javascript" src="../common/dist/libs.js"></script>
+
+    <script type="text/javascript" src="../common/utils/angular-tree/angular/angular.treeview.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../common/utils/angular-tree/css/angular.treeview.css">
+
+    <script type="text/javascript" src="../common/utils/angular-summernote-master/dist/angular-summernote.js"></script>
+    <script type="text/javascript" src="../common/assets/laydate/laydate.js"></script>
+
+    <script type="text/javascript" src="../common/js/lib/ng-file-upload.min.js"></script>
+    <script type="text/javascript" src="../common/js/lib/ng-file-upload-shim.min.js"></script>
+    <script type="text/javascript" src="../common/js/lib/angular-sanitize.js"></script>
+
+    <script type="text/javascript" src="../common/js/lib/angular-sanitize.js"></script>
+
+    <script type="text/javascript" src="../common/js/lib/angular-popups.js"></script>
+
+    <script type="text/javascript" src="js/service/service.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../common/css/sweetalert.css">
+    <script type="text/javascript" src="../common/js/lib/sweet-alert.min.js"></script>
+    <script type="text/javascript" src="../common/js/lib/SweetAlert.js"></script>
+
+    <!--页面日期工具-->
+    <script type="text/javascript" src="../common/js/lib/ui-bootstrap-tpls.js"></script>
+    <script type="text/javascript" src="../common/js/lib/datetime-picker.js"></script>
+    <script type="text/javascript" src="../common/js/lib/angular-locale_zh-cn.js"></script>
+    <script type="text/javascript" src="../common/js/lib/angular-local-storage.js"></script>
+
+    <script type="text/javascript" src="dist/all.min.js"></script>
+</head>
+<body ng-controller="mainCtrl">
+   <div ng-include="'h.html'">
+
+   </div>
+   <div ng-include="'b.html'"></div>
+   <script>
+       angular.module('note',[])
+           .controller('mainCtrl',function () {
+
+           })
+   </script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="jquery-3.0.0.min.js"></script>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="bootstrap-3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

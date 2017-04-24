@@ -1,0 +1,13 @@
+ul{list-style: none;color:red;font-size:20px;}
+li{color:black;font-size:12px;;}
+#body-container{width:970px; height:600px; }
+#left{width:30%;height:100%;}
+#center{width:45%;height:100%;margin-left:30%;margin-top:-600px ;}
+#center #study-month{height:45%;}
+#center #theme-market{height:55%;}
+#right{width:25%;height:100%;margin-left:75%;margin-top:-600px;}
+#right #website-notice{height: 30%;}
+#right #mini-menu{height: 10%;}
+#right #up-feeling {height: 55%;}
+#right dt{width:30%;text-align: left;}
+#right dd{margin-left:30%;}
