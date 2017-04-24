@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- Bootstrap -->
+    <link href="bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!--<link  href="css/reset.css" rel="stylesheet">-->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+  <div class="container">
+      <div id="page-url">
+
+      </div>
+      <div>
+          <div id="paper-opr">
+              <form>
+                  <label id="begin-end-date">请选择起始日期：</label>
+                  <input type="date" id="begin-date" >————
+                  <input type="date" id="end-date">
+              </form>
+                <label for="opr-choice">选择操作</label>
+              <select id="opr-choice">
+                  <option></option>
+                  <option>删除</option>
+                  <option>修改</option>
+              </select>
+          </div>
+
+          <div>
+              <div>
+                  <ul class="dropdown">
+
+                  </ul>
+              </div>
+              <!--文章显示列表-->
+              <div style="width:600px;">
+
+                          <table>
+                              <thead>
+                              <tr>
+                                  <th style="width:50%;"></th>
+                                  <th style="width:16%;"></th>
+                                  <th style="width:18%;"></th>
+                                  <th style="width:12%;"></th>
+                              </tr>
+                              </thead>
+                              <tbody>
+                                 <tr>
+                                     <td style="font-size:16px;"><a>文章的标题</a></td>
+                                     <td style="font-size:12px;">发布者：<p class="up-user " style="display:inline;">张筱雨</p></td>
+                                     <td style="font-size:12px;">时间：<p class="up-time" style="display:inline;">2014-12-12</p></td>
+                                     <td style="font-size:12px;">积分值：<p class="paper-score" style="display:inline;">6</p>分</td>
+                                 </tr>
+                                 <tr>
+                                     <td ><a>文章的标题</a></td>
+                                     <td >发布者：<p class="up-user " style="display:inline;">张筱雨</p></td>
+                                     <td >时间：<p class="up-time" style="display:inline;">2014-12-12</p></td>
+                                     <td >积分值：<p class="paper-score" style="display:inline;">6</p>分</td>
+                                 </tr>
+                              </tbody>
+                          </table>
+
+              </div>
+
+
+          </div>
+          <!--分页-->
+          <div>
+
+          </div>
+      </div>
+  </div>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="jquery-3.0.0.min.js"></script>
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="bootstrap-3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

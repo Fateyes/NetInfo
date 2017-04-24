@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:jsp="http://java.sun.com/JSP/Page">
+<head>
+    <title>在线理论学习系统-理论超市</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="bootstrap-3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/TheoryMarket.css">
+
+    <script type="text/javascript" src="jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" src="bootstrap-3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<jsp:include></jsp:include>
+<div class="container">
+    <!--第1行，查询表单-->
+    <div class="row" id="rowOne">
+        <div class="col-md-12 col-sm-12">
+            <form action="#" role="form" class="form-inline">
+                <div class="form-group">
+                    <label for="beginDateText">起止日期</label>
+                    <input type="date" class="form-control" id="beginDateText">
+                    <label for="endDateText">——</label>
+                    <input type="date" class="form-control" id="endDateText">
+                </div>
+                <div class="form-group">
+                    <label for="actionSelect">动作</label>
+                    <select name="" id="actionSelect" class="form-control">
+                        <option value="请选择">请选择</option>
+                        <option value="修改">修改</option>
+                        <option value="删除">删除</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="queryButton"></label>
+                    <input type="button" value="查询" class="form-control" id="queryButton">
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--第2行，文章类型列表+文章列表-->
+    <div class="row" id="rowTwo">
+        <div class="col-md-3 col-sm-12">
+            <ul id="articleClass" class="nav nav-tabs nav-stacked ">
+                <li><a href="#">习近平系列讲话</a></li>
+                <li><a href="#">读经典学哲学</a></li>
+                <li><a href="#">党史军史</a></li>
+                <li><a href="#">规章制度</a></li>
+                <li><a href="#">各级首长讲话</a></li>
+                <li><a href="#">其它</a></li>
+            </ul>
+        </div>
+        <div class="col-md-9 col-sm-12">
+            <table class="table table-bordered" id="articleTable">
+                <thead>
+                <tr>
+                    <th>标题</th>
+                    <th>发布人</th>
+                    <th>发布时间</th>
+                    <th>积分</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><a href="#">习近平:坚持我国现阶段基本经济制度</a></td>
+                    <td>黄万富</td>
+                    <td>2016/04/22</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td><a href="#">习近平:坚持我国现阶段基本经济制度</a></td>
+                    <td>黄万富</td>
+                    <td>2016/04/22</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td><a href="#">习近平:坚持我国现阶段基本经济制度</a></td>
+                    <td>黄万富</td>
+                    <td>2016/04/22</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td><a href="#">习近平:坚持我国现阶段基本经济制度</a></td>
+                    <td>黄万富</td>
+                    <td>2016/04/22</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td><a href="#">习近平:坚持我国现阶段基本经济制度</a></td>
+                    <td>黄万富</td>
+                    <td>2016/04/22</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td><a href="#">习近平:坚持我国现阶段基本经济制度</a></td>
+                    <td>黄万富</td>
+                    <td>2016/04/22</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td><a href="#">习近平:坚持我国现阶段基本经济制度</a></td>
+                    <td>黄万富</td>
+                    <td>2016/04/22</td>
+                    <td>12</td>
+                </tr>
+                </tbody>
+            </table>
+            <nav aria-label="Page navigation">
+                <ul class="pagination">
+                    <li>
+                        <a href="#" aria-lable="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li>
+                        <a href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+</body>
+</html>

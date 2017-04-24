@@ -5,7 +5,7 @@
     <title>首页主体</title>
     <!-- Bootstrap -->
     <link href="bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet">
-
+   <!--<link  href="css/reset.css" rel="stylesheet">-->
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -13,44 +13,128 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
+<style>
+     ul{list-style: none;color:red;font-size:20px;}
+     li{color:black;font-size:12px;}
+     #body-container{width:970px; height:600px; }
+     #left{width:30%;height:100%;}
+     #center{width:45%;height:100%;margin-left:30%;margin-top:-600px ;}
+     #center #study-month{height:45%;}
+     #center #theme-market{height:55%;}
+    #right{width:25%;height:100%;margin-left:75%;margin-top:-600px;}
+    #right #website-notice{height: 30%;}
+    #right #mini-menu{height: 10%;}
+    #right #up-feeling {height: 55%;}
+</style>
 <body>
 
-     <div class="container">
+     <div class="container" id="body-container">
           <div id="left">
               <!--轮播图-->
               <div id="mul-pic">
-                  <img  >
+                  <img   src="images/scenery1.jpg" >
               </div>
               <!--推荐书推荐文-->
               <div>
-                  <ul class="list-group list-unstyled">
-                      <li class="list-group-item-heading">荐书荐文</li>
-                      <li class="list-group-item">呵呵呵呵呵呵</li>
+                  <ul class=" list-unstyled">荐书荐文
+
+
+                     <li ><a>推荐文章的标题</a></li>
                   </ul>
               </div>
           </div>
          <div id="center">
              <!--每月必学-->
-             <div>
-                 <ul>
-                     <li></li>
+             <div id="study-month">
+                 <ul class="list-unstyled">每月必学
+
+                     <li style="color:black;"><a><h4>习主席对青年说的9句话</h4></a> <small>习主席对青年说的就句话，今天，还有很多内容，后面还有……</small></li>
                  </ul>
              </div>
              <!--理论超市-->
-             <div></div>
-         </div>
-         <div id="right">
-             <div>
-
-             </div>
-             <div>
-                 <ul>
-                     <li></li>
+             <div id="theme-market">
+                 <ul class="list-unstyled">理论超市
+                     <li><a>
+                         <div class="row">
+                             <div class="col-sm-8"><h6>我就是一个兵</h6></div>
+                             <div class="col-sm-4">2014-12-12</div>
+                         </div></a></li>
                  </ul>
              </div>
+         </div>
+         <div id="right">
+
+             <div id="website-notice">
+                    <div id="two-choice"  class="row">
+                        <div class="col-sm-6 text-center"> <a >本站公告</a></div>
+                        <div class="col-sm-6"><a >当前在线</a></div>
+
+
+
+                        <!--<button class="btn btn-primary" >本站公告</button>-->
+                        <!--<button class="btn btn-info" style="width:50%;">当前在线</button>-->
+                    </div>
+                 <div >
+
+                 </div>
+             </div>
+             <!--小菜单-->
+             <div id="mini-menu">
+                 <div class="row text-center">
+                     <a href="http://jwch.fzu.edu.cn/">
+                         <div class="col-sm-3 " style="padding:0;">
+
+                                 <img src="icon/mini-startLearn.png" >
+                                 <p>开始学习</p>
+
+                         </div>
+                     </a>
+                     <a href="http://www.lib.fzu.edu.cn/" target="_blank">
+                         <div class="col-sm-3" style="padding:0;">
+
+                                 <img src="icon/mini-home.png">
+                                 <p>我的消息</p>
+
+                         </div>
+                     </a>
+                     <a href="http://jwch.fzu.edu.cn/" target="_blank">
+                         <div class="col-sm-3" style="padding:0;">
+
+                                 <img src="icon/mini-feeling.png">
+                                 <p>攥写体会</p>
+
+                         </div>
+                     </a>
+                     <a href="http://jwch.fzu.edu.cn/" target="_blank">
+                         <div class="col-sm-3" style="padding:0;">
+
+                                 <img src="icon/mini-perInfo.png">
+                                 <p>个人资料</p>
+
+                         </div>
+                     </a>
+
+
+
+                 </div>
+
+             </div>
              <!--热点体会-->
-             <div>
-                 <ul>
+             <div id="up-feeling">
+                 <ul class="list-unstyled" style="color: red">热点体会
+                     <li class="divider"></li>
+                     <li>
+                         <a>
+                         <div class="row">
+                             <div class="col-xs-4"><img class="user-img" src="icon/mini-user.png" style="margin-top:5px; background-color: grey" ></div>
+                             <div class="col-xs-8" style="padding:0;"><h6>标题</h6><small class="user-name"><label for="up-user-name">发布人</label><span id="up-user-name">用户名</span></small>
+                              </div>
+                         </div>
+                        </a>
+                     </li>
+
+
+
 
                  </ul>
              </div>
@@ -60,7 +144,7 @@
      <div class="container">
          <header>
              <div class="row">
-                 <div class="col-lg-6"><h5>学习之星</h5><small>学习理论哪家强</small></div>
+                 <div class="col-lg-6"><h5>学习之星</h5><small >学习理论哪家强</small></div>
                  <div class="col-lg-offset-6">
                      <button class="btn btn-primary">月度之星</button>
                      <button class="btn btn-primary">季度之星</button>
