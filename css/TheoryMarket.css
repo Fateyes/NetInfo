@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+
+/*表单部分*/
+#rowOne {
+    margin: 20px auto;
+    height: 80px;
+    border: 1px solid #cccccc;
+}
+#rowOne>div {
+    height: 80px;
+    line-height: 80px;
+}
+#rowOne label {
+    font-size: 30px;
+    color: #444;
+    text-align: center;
+}
+
+.form-inline>div{
+    margin-left: 30px;
+}
+.form-control {
+    height: 55px;
+}
+
+/*文章列表+文章类型导航*/
+#rowTwo {
+    margin-top: 50px;
+
+}
+/*文章分类*/
+.nav-tabs {
+    border-radius: 4px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.067);
+}
+.nav-tabs li {
+    margin: 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    border-top: none;
+}
+.nav-tabs:first-child {
+    border: 1px solid #ddd;
+
+}
+.nav-tabs li a {
+    font-size: 30px;
+}
+
+.nav-tabs li a:hover{
+    color: #fff;
+    background: #0088cc;
+}
+/*文章列表*/
+#articleTable thead tr{
+    height: 70px;
+    background-color: #EEE;
+}
+#articleTable a {
+    text-decoration: none;
+}
+/*文章页码*/
+.pagination {
+    float: right;
+}
