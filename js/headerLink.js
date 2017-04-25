@@ -7,7 +7,7 @@ angular.module('header',['ngRoute'])
     })
     .config(function ($routeProvider) {
         $routeProvider
-            .when('/',{templateUrl:'b.html'})
+            .when('/',{templateUrl:'../html/b.html'})
             .when('/themeMarket',{templateUrl:'themeMarket.html'})
             .when('/themeClass',{templateUr:'themeClass.html'})
             .when('/studyMonth',{templateUrl:'studyMonth.html'})
