@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="today">
+<head>
+    <meta charset="UTF-8">
+    <title>获得数据</title>
+    <script src="js/lib/angular.js"></script>
+    <!--<script src="js/lib/angular-route.js"></script>-->
+  <script src="js/lib/angular-route.min.js"></script>
+
+</head>
+<body ng-controller="todayCtrl">
+   <div ng-include="'h.html'"></div>
+   <ul>
+       <li><a href="#/">本页</a></li>
+       <li><a href="#/mainPage">首页主体</a></li>
+       <li><a href="#/dropdown">下拉</a></li>
+   </ul>
+   <div ng-view></div>
+    <!--<div ng-repeat="detail in details">-->
+        <!--<p ng-bind="detail.title"></p>-->
+        <!--<p ng-bind="detail.up_user"></p>-->
+        <!--<p ng-bind="detail.up_date"></p>-->
+    <!--</div>-->
+    <!--<form>-->
+        <!--<label for="sis">下拉</label>-->
+            <!--<select id="sis" ng-options="x for x in names" ng-model="selName" ng-init="selName=names[0]">-->
+
+            <!--</select>-->
+    <!--</form>-->
+
+<script>
+     angular.module('today',['ngRoute'])
+         .controller('todayCtrl',function ($scope,$http) {
+
+             $scope.names=["我的","你的","他的"];
+             $http.get("paper.json").then(function (datas) {
+                   $scope.details=datas.data.papers;
+             })
+         })
+         .config(function ($routeProvider) {
+              $routeProvider
+                  .when('/',{
+                      template:"直接显示内容"
+
+
+                  })
+                  .when('/mainPage',{templateUrl:"b.html"})
+                  .when('/dropdown',{
+//                      templateUrl:'dropDown.html'
+                      template:"我需要下来框"
+                  })
+
+         })
+
+</script>
+<script src="jquery-3.0.0.min.js"></script>
+</body>
+</html>
